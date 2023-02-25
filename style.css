@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+}
+body {
+  background-color: #4a98f7;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.clock {
+  background-color: #fff;
+  width: 85%;
+  max-width: 430px;
+  border-radius: 0.6rem;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+.container img {
+  width: 50px;
+}
+.time {
+  margin-block: 1.2rem 1.7rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.controls {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+  width: 90%;
+}
+.controls select {
+  width: calc(100% / 2 - 5px);
+  outline: 0;
+  border: 1px solid #000;
+  border-radius: 0.2rem;
+  text-transform: capitalize;
+  font-size: 16px;
+  padding: 0.1rem 0.3rem;
+}
+select::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f0f0f0;
+}
+select::-webkit-scrollbar-thumb {
+  background-color: #4a98f7;
+  border-radius: 10px;
+}
+
+.alarm-btn {
+  width: 90%;
+  background-color: #4a98f7;
+  border: 0;
+  outline: 0;
+  border-radius: 0.2rem;
+  padding-block: 0.5rem;
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out; /* for safari */
+  cursor: pointer;
+}
+.alarm-btn:hover {
+  background-color: #2587ff;
+}
+.disable {
+  opacity: 0.5;
+  pointer-events: none; /* disalbe any events */
+  user-select: none;
+}
